@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Module Examples</title>
+  </head>
+  <body>
+    <h1>Module Examples</h1>
+    <div id="peopleModule">
+      <h1>People</h1>
+      <input placeholder="name" type="text">
+      <button id="addPerson">Add Person</button>
+      <ul id="people">
+        <script id="people-template" type="text/template">
+          {{#people}}
+          <li>
+            <span>{{.}}</span>
+            <i class="del">X</i>
+          </li>
+          {{/people}}
+        </script>
+      </ul>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/mustache/mustache.js" charset="utf-8"></script>
+    <script src="scripts/1_modularJS.js"></script>
+  </body>
+</html>
